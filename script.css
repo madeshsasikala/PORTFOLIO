@@ -231,3 +231,40 @@
     text-align: center;
   }
 }
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #007BFF;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
