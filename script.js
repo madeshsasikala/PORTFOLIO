@@ -20,3 +20,10 @@ darkModeButton.innerText = '🌙 Dark Mode';
 darkModeButton.classList.add('dark-mode-toggle');
 darkModeButton.onclick = toggleDarkMode;
 document.body.appendChild(darkModeButton);
+
+
+function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+  }
+  
