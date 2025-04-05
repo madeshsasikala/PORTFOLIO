@@ -212,3 +212,22 @@
     padding-right: 20px;
   }
   
+
+  /* 📱 Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section {
+    padding-top: 100px;
+    text-align: center;
+  }
+}
